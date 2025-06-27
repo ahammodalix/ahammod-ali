@@ -1,2 +1,199 @@
-# ahammod-ali
-My name is Ahammod Ali. I am an experienced Cyber Security Expert and Social Media Content Removal Specialist
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahammod Ali | Cyber Security Expert</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 20px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #cfd8dc;
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 15px 35px rgba( 0, 0, 0, 0.4 );
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  animation: slideUp 1s ease forwards;
+}
+
+.section h3 {
+  color: #80deea;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+}
+
+li i {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  color: #4dd0e1;
+}
+
+a {
+  color: #4fc3f7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00e5ff;
+}
+
+.email {
+  color: #ffab91;
+  font-weight: bold;
+}
+
+button {
+  background: #29b6f6;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 20px rgba(0, 229, 255, 0.5);
+}
+
+button:hover {
+  background: #00acc1;
+  transform: scale(1.05);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>  <h1>Ahammod Ali</h1>
+  <h2><i class="fas fa-lock"></i> Cyber Security Expert & Content Removal Specialist</h2>  <div class="section">
+    <h3>About Me</h3>
+    <p>
+      My name is Ahammod Ali. I am an experienced Cyber Security Expert and Social Media Content Removal Specialist. My expertise lies in cybersecurity, data protection, and efficiently removing harmful, sexual, or harassing content from online platforms.
+    </p>
+    <p>
+      I specialize in recovering hacked accounts and restoring suspended accounts. With years of experience, I offer effective solutions to complex cyber security challenges.
+    </p>
+  </div>  <div class="section">
+    <h3>Services I Offer</h3>
+    <ul>
+      <li><i class="fas fa-user-shield"></i> Hacked account recovery</li>
+      <li><i class="fas fa-unlock"></i> Suspended account restoration</li>
+      <li><i class="fas fa-copyright"></i> Fake copyright content restore</li>
+      <li><i class="fas fa-brain"></i> Cybersecurity consulting</li>
+      <li><i class="fas fa-shield-alt"></i> Personal & organizational data protection</li>
+    </ul>
+  </div>  <div class="section">
+    <h3>Supported Platforms</h3>
+    <ul>
+      <li><i class="fab fa-facebook"></i> Facebook</li>
+      <li><i class="fab fa-instagram"></i> Instagram</li>
+      <li><i class="fab fa-x-twitter"></i> Twitter/X</li>
+      <li><i class="fab fa-google"></i> Google</li>
+      <li><i class="fas fa-globe"></i> Website</li>
+      <li><i class="fab fa-google-play"></i> Play Store</li>
+      <li><i class="fab fa-linkedin"></i> LinkedIn</li>
+      <li><i class="fas fa-ellipsis-h"></i> Others</li>
+    </ul>
+  </div>  <div class="section">
+    <h3>Contact</h3>
+    <p class="email">📧 ahammodalix@gmail.com</p>
+    <p><i class="fas fa-link"></i> <a href="https://ahammodalix.bio.link/" target="_blank">Visit My Bio Link</a></p>
+    <p><i class="fas fa-user"></i> <a href="https://about.me/ahammodalix" target="_blank">About Me</a></p>
+    <br>
+    <button>Hire Me</button>
+  </div>  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 75 },
+        size: { value: 3 },
+        color: { value: "#00e5ff" },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00e5ff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
+  </script></body>
+</html>
