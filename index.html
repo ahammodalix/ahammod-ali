@@ -1,264 +1,1560 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ═══════════════════════════════════════════
+       SEO META TAGS
+  ═══════════════════════════════════════════ -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ahammod Ali | Cyber Security Expert</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <!-- Primary SEO -->
+  <title>Ahammod Ali | Cyber Security Expert & Account Recovery Specialist</title>
+  <meta name="description" content="Ahammod Ali — Trusted Cyber Security Expert from Sylhet, Bangladesh. Specializing in hacked account recovery, suspended account restoration, harmful content removal, and data protection across Facebook, Instagram, Twitter, Google & more."/>
+  <meta name="keywords" content="Ahammod Ali, Cyber Security Expert, Account Recovery, Hacked Account, Suspended Account, Content Removal, Bangladesh, Sylhet, Facebook Recovery, Instagram Recovery, Meta Support"/>
+  <meta name="author" content="Ahammod Ali"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="language" content="English"/>
+  <meta name="revisit-after" content="7 days"/>
+  <meta name="rating" content="general"/>
+  <link rel="canonical" href="https://ahammodalix.bio.link/"/>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://ahammodalix.bio.link/"/>
+  <meta property="og:title" content="Ahammod Ali | Cyber Security Expert"/>
+  <meta property="og:description" content="Experienced Cyber Security Expert & Social Media Content Removal Specialist. Fast, ethical, confidential solutions."/>
+  <meta property="og:image" content="https://ahammodalix.bio.link/og-image.jpg"/>
+  <meta property="og:site_name" content="Ahammod Ali Portfolio"/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Ahammod Ali | Cyber Security Expert"/>
+  <meta name="twitter:description" content="Experienced Cyber Security Expert & Social Media Content Removal Specialist."/>
+  <meta name="twitter:image" content="https://ahammodalix.bio.link/og-image.jpg"/>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahammod Ali",
+    "jobTitle": "Cyber Security Expert",
+    "description": "Experienced Cyber Security Expert and Social Media Content Removal Specialist from Sylhet, Bangladesh.",
+    "url": "https://ahammodalix.bio.link/",
+    "sameAs": [
+      "https://ahammodalix.bio.link/",
+      "https://about.me/ahammodalix"
+    ],
+    "email": "ahammodalix@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Habiganj",
+      "addressRegion": "Sylhet",
+      "addressCountry": "BD"
+    },
+    "knowsAbout": ["Cyber Security","Account Recovery","Content Removal","Data Protection","Meta Support"],
+    "knowsLanguage": ["Bengali","English"]
+  }
+  </script>
+
+  <!-- Fonts - preconnect for speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <!-- Rajdhani: sharp military body | Orbitron: cyber display | JetBrains Mono: code/mono -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;600&display=swap"/>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome - defer non-critical icons -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" onload="this.rel='stylesheet'"/>
+  <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/></noscript>
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* ═══════════════════════════════════════
+       TOKENS — RGB COLOUR SYSTEM
+    ═══════════════════════════════════════ */
+    :root {
+      /* Primary: electric cyan */
+      --teal:   rgb(0, 240, 255);
+      /* Secondary: vivid violet */
+      --violet: rgb(123, 58, 255);
+      /* Highlight: hot magenta */
+      --pink:   rgb(255, 0, 128);
+      /* Warning: amber */
+      --gold:   rgb(255, 176, 0);
+      /* Backgrounds */
+      --bg0:    rgb(2,   7,  18);
+      --bg1:    rgb(4,  12,  26);
+      --bg2:    rgb(7,  18,  36);
+      /* Glass */
+      --glass-bg:     rgba(255,255,255,0.04);
+      --glass-border: rgba(255,255,255,0.10);
+      --glass-shine:  rgba(255,255,255,0.07);
+      /* Text */
+      --text:   rgb(185,220,235);
+      --muted:  rgb(70,120,145);
+      --white:  rgb(230,248,255);
+      --r: 16px;
     }
+
+    /* ═══════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════ */
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; font-size:16px; }
+
+    ::-webkit-scrollbar { width:4px; }
+    ::-webkit-scrollbar-track { background:var(--bg0); }
+    ::-webkit-scrollbar-thumb { background:linear-gradient(var(--teal),var(--violet)); border-radius:4px; }
+
     body {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      padding: 20px;
-      line-height: 1.6;
+      background: var(--bg0);
+      color: var(--text);
+      font-family: 'Rajdhani', sans-serif;
       overflow-x: hidden;
+      cursor: none;
     }
-    h1 {
-      font-size: 2.5rem;
-      color: #ffffff;
-      text-align: center;
-      animation: fadeIn 1.2s ease-in-out;
-    }
-    h2 {
-      font-size: 1.2rem;
-      text-align: center;
-      margin-bottom: 20px;
-      color: #cfd8dc;
-      animation: fadeIn 1.4s ease-in-out;
-    }
-    .section {
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 20px;
-      padding: 25px;
-      margin: 20px 0;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(20px) saturate(180%);
-      -webkit-backdrop-filter: blur(20px) saturate(180%);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      animation: slideUp 1s ease forwards;
-    }
-    .section h3 {
-      color: #80deea;
-      margin-bottom: 15px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 12px;
-      padding-left: 30px;
-      position: relative;
-    }
-    li i {
-      position: absolute;
-      left: 0;
-      top: 3px;
-      color: #4dd0e1;
-    }
-    a {
-      color: #4fc3f7;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #00e5ff;
-    }
-    .email {
-      color: #ffab91;
-      font-weight: bold;
-    }
-    button {
-      background: #29b6f6;
-      color: white;
-      padding: 10px 25px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 6px 20px rgba(0, 229, 255, 0.5);
-    }
-    button:hover {
-      background: #00acc1;
-      transform: scale(1.05);
-    }
-    @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-    #particles-js {
+
+    /* ═══════════════════════════════════════
+       CUSTOM CURSOR
+    ═══════════════════════════════════════ */
+    #cursor {
+      width: 10px; height: 10px;
+      background: var(--teal);
+      border-radius: 50%;
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%,-50%);
+      transition: transform 0.05s;
+      mix-blend-mode: screen;
     }
-    .section p {
-      margin-bottom: 15px;
+
+    #cursor-ring {
+      width: 36px; height: 36px;
+      border: 1px solid rgba(0,240,255,0.5);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%,-50%);
+      transition: width 0.25s, height 0.25s, border-color 0.25s;
+    }
+
+    body:has(a:hover) #cursor-ring,
+    body:has(button:hover) #cursor-ring {
+      width: 52px; height: 52px;
+      border-color: var(--teal);
+    }
+
+    /* ═══════════════════════════════════════
+       BACKGROUND LAYERS
+    ═══════════════════════════════════════ */
+    #bg-canvas {
+      position: fixed; inset: 0;
+      z-index: 0; pointer-events: none;
+    }
+
+    /* aurora */
+    .aurora {
+      position: fixed; inset: 0;
+      z-index: 0; pointer-events: none;
+      overflow: hidden;
+    }
+
+    .aurora-blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      animation: drift 18s infinite alternate ease-in-out;
+    }
+
+    .aurora-blob:nth-child(1) {
+      width: 700px; height: 500px;
+      background: radial-gradient(ellipse, rgba(0,240,255,0.09), transparent 70%);
+      top: -10%; left: -15%;
+      animation-delay: 0s; animation-duration: 20s;
+    }
+
+    .aurora-blob:nth-child(2) {
+      width: 600px; height: 600px;
+      background: radial-gradient(ellipse, rgba(123,58,255,0.10), transparent 70%);
+      top: 30%; right: -20%;
+      animation-delay: -7s; animation-duration: 25s;
+    }
+
+    .aurora-blob:nth-child(3) {
+      width: 500px; height: 400px;
+      background: radial-gradient(ellipse, rgba(255,0,128,0.07), transparent 70%);
+      bottom: 5%; left: 30%;
+      animation-delay: -12s; animation-duration: 22s;
+    }
+
+    @keyframes drift {
+      0%   { transform: translate(0,0) scale(1); }
+      33%  { transform: translate(40px,-30px) scale(1.05); }
+      66%  { transform: translate(-20px,40px) scale(0.95); }
+      100% { transform: translate(30px,20px) scale(1.02); }
+    }
+
+    /* scan lines */
+    .scanlines {
+      position: fixed; inset: 0; z-index: 1;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent, transparent 3px,
+        rgba(0,240,255,0.012) 3px, rgba(0,240,255,0.012) 4px
+      );
+    }
+
+    /* vignette */
+    .vignette {
+      position: fixed; inset: 0; z-index: 1;
+      pointer-events: none;
+      background: radial-gradient(ellipse at center, transparent 50%, rgba(2,7,18,0.75) 100%);
+    }
+
+    /* ═══════════════════════════════════════
+       GLASS MIXIN UTILITY
+    ═══════════════════════════════════════ */
+    .glass {
+      background: var(--glass-bg);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid var(--glass-border);
+      box-shadow:
+        inset 0 1px 0 var(--glass-shine),
+        0 8px 32px rgba(0,0,0,0.35);
+    }
+
+    /* ═══════════════════════════════════════
+       LOADER
+    ═══════════════════════════════════════ */
+    #loader {
+      position: fixed; inset: 0;
+      background: var(--bg0);
+      z-index: 10000;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 24px;
+      transition: opacity 0.6s, visibility 0.6s;
+    }
+
+    #loader.hidden { opacity: 0; visibility: hidden; }
+
+    .loader-text {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 13px;
+      letter-spacing: 6px;
+      color: var(--teal);
+    }
+
+    .loader-bar-wrap {
+      width: 220px; height: 2px;
+      background: rgba(0,240,255,0.15);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .loader-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--teal), var(--violet));
+      border-radius: 2px;
+      animation: loadBar 1.4s ease-in-out forwards;
+    }
+
+    @keyframes loadBar {
+      0%   { width: 0; }
+      60%  { width: 75%; }
+      100% { width: 100%; }
+    }
+
+    .loader-pct {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--muted);
+    }
+
+    /* ═══════════════════════════════════════
+       NAV
+    ═══════════════════════════════════════ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 500;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 48px;
+      background: rgba(2,7,18,0.6);
+      backdrop-filter: blur(30px) saturate(200%);
+      -webkit-backdrop-filter: blur(30px) saturate(200%);
+      border-bottom: 1px solid rgba(0,240,255,0.06);
+      transform: translateY(-100%);
+      animation: slideDown 0.7s 1.8s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+
+    @keyframes slideDown {
+      to { transform: translateY(0); }
+    }
+
+    .nav-logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 15px; font-weight: 900;
+      letter-spacing: 5px; color: var(--teal);
+      text-shadow: 0 0 20px rgba(0,240,255,0.4);
+    }
+
+    .nav-links { display:flex; gap:32px; list-style:none; }
+
+    .nav-links a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; letter-spacing: 2.5px;
+      color: var(--muted); text-decoration: none;
+      text-transform: uppercase;
+      position: relative; padding-bottom: 4px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0;
+      width: 0; height: 1px;
+      background: var(--teal);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--teal); }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-badge {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 16px;
+      background: rgba(0,255,120,0.08);
+      border: 1px solid rgba(0,255,120,0.2);
+      border-radius: 20px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; letter-spacing: 2px; color: rgb(0,255,120);
+    }
+
+    .pulse-dot {
+      width: 6px; height: 6px;
+      background: rgb(0,255,120); border-radius: 50%;
+      animation: pulseGlow 1.8s infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%,100% { box-shadow: 0 0 0 0 rgba(0,255,120,0.5); }
+      50%      { box-shadow: 0 0 0 6px rgba(0,255,120,0); }
+    }
+
+    /* ═══════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════ */
+    .hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      padding: 130px 24px 60px;
+      position: relative; z-index: 2;
+    }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 8px 22px;
+      background: rgba(0,240,255,0.06);
+      border: 1px solid rgba(0,240,255,0.2);
+      border-radius: 30px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; letter-spacing: 4px; color: var(--teal);
+      margin-bottom: 36px;
+      opacity: 0;
+      animation: fadeUp 0.8s 2s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+
+    .hero-tag i { font-size: 12px; }
+
+    .hero-name {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(3.2rem, 10vw, 7.5rem);
+      font-weight: 900;
+      letter-spacing: 6px;
+      line-height: 1.05;
+      color: var(--white);
+      opacity: 0;
+      animation: fadeUp 0.9s 2.2s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+
+    .hero-name .stroke {
+      -webkit-text-stroke: 2px var(--teal);
+      color: transparent;
+      filter: drop-shadow(0 0 30px rgba(0,240,255,0.5));
+    }
+
+    /* glitch */
+    .glitch-wrap { position: relative; display: inline-block; }
+    .glitch-wrap::before, .glitch-wrap::after {
+      content: attr(data-text);
+      position: absolute; inset: 0;
+      font: inherit; color: inherit;
+    }
+    .glitch-wrap::before {
+      color: var(--pink);
+      animation: glA 7s infinite;
+      clip-path: inset(40% 0 50% 0);
+    }
+    .glitch-wrap::after {
+      color: var(--teal);
+      animation: glB 7s infinite;
+      clip-path: inset(70% 0 10% 0);
+    }
+
+    @keyframes glA {
+      0%,88%,100% { transform:none; opacity:0; }
+      90% { transform:translateX(-6px) skewX(-3deg); opacity:0.9; }
+      92% { transform:translateX(6px); opacity:0.6; }
+      94% { opacity:0; }
+    }
+    @keyframes glB {
+      0%,90%,100% { transform:none; opacity:0; }
+      92% { transform:translateX(6px) skewX(3deg); opacity:0.8; }
+      94% { transform:translateX(-4px); opacity:0.5; }
+      96% { opacity:0; }
+    }
+
+    .hero-role {
+      font-size: 14px; letter-spacing: 6px; color: var(--muted);
+      font-weight: 300; text-transform: uppercase; margin-top: 20px;
+      opacity: 0;
+      animation: fadeUp 0.8s 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+
+    /* rotating ring */
+    .hero-ring-wrap {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      pointer-events: none;
+    }
+
+    .ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px dashed rgba(0,240,255,0.07);
+      top: 50%; left: 50%;
+    }
+
+    .ring-1 { width:550px; height:550px; margin:-275px 0 0 -275px; animation: spin 60s linear infinite; }
+    .ring-2 { width:720px; height:720px; margin:-360px 0 0 -360px; animation: spin 90s linear infinite reverse; border-color: rgba(123,58,255,0.05); }
+    .ring-3 { width:900px; height:900px; margin:-450px 0 0 -450px; animation: spin 120s linear infinite; border-color: rgba(0,240,255,0.03); }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* stats */
+    .stats {
+      display: flex; gap: 0;
+      margin-top: 64px;
+      opacity: 0;
+      animation: fadeUp 0.8s 2.8s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+
+    .stat-box {
+      padding: 20px 42px;
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      text-align: center;
+      position: relative;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .stat-box + .stat-box { border-left: none; }
+
+    .stat-box:hover {
+      background: rgba(0,240,255,0.05);
+      transform: translateY(-4px);
+    }
+
+    .stat-box:first-child { border-radius: var(--r) 0 0 var(--r); }
+    .stat-box:last-child  { border-radius: 0 var(--r) var(--r) 0; }
+
+    .s-num {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.2rem; font-weight: 700;
+      color: var(--teal);
+      line-height: 1;
+      text-shadow: 0 0 20px rgba(0,240,255,0.4);
+    }
+
+    .s-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px; letter-spacing: 2px;
+      color: var(--muted); margin-top: 8px;
+    }
+
+    /* scroll cue */
+    .scroll-cue {
+      position: absolute; bottom: 36px; left: 50%;
+      transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px; letter-spacing: 3px; color: var(--muted);
+      opacity: 0;
+      animation: fadeUp 0.8s 3.2s forwards;
+    }
+
+    .scroll-line {
+      width: 1px; height: 48px;
+      background: linear-gradient(to bottom, var(--teal), transparent);
+      animation: scrollPulse 2s infinite;
+    }
+
+    @keyframes scrollPulse {
+      0%   { transform: scaleY(0); transform-origin: top; }
+      50%  { transform: scaleY(1); transform-origin: top; }
+      51%  { transform: scaleY(1); transform-origin: bottom; }
+      100% { transform: scaleY(0); transform-origin: bottom; }
+    }
+
+    /* ═══════════════════════════════════════
+       LAYOUT
+    ═══════════════════════════════════════ */
+    main {
+      position: relative; z-index: 2;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 32px 120px;
+    }
+
+    /* section reveal */
+    .reveal {
+      opacity: 0; transform: translateY(50px);
+      transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1),
+                  transform 0.8s cubic-bezier(0.22,1,0.36,1);
+    }
+    .reveal.in { opacity: 1; transform: none; }
+    .reveal.delay-1 { transition-delay: 0.1s; }
+    .reveal.delay-2 { transition-delay: 0.2s; }
+    .reveal.delay-3 { transition-delay: 0.3s; }
+
+    /* ── section header ── */
+    .sh {
+      display: flex; align-items: center; gap: 18px;
+      margin-bottom: 40px;
+    }
+
+    .sh-num {
+      font-family: 'Orbitron', sans-serif; font-size: 11px;
+      color: var(--teal); letter-spacing: 2px; opacity: 0.5;
+    }
+
+    .sh-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.3rem; font-weight: 700;
+      color: var(--white); letter-spacing: 4px; text-transform: uppercase;
+    }
+
+    .sh-line {
+      flex: 1; height: 1px;
+      background: linear-gradient(to right, rgba(0,240,255,0.25), transparent);
+    }
+
+    .sec { margin-bottom: 100px; }
+
+    /* ═══════════════════════════════════════
+       GLASS CARDS
+    ═══════════════════════════════════════ */
+    /* about */
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3px;
+    }
+
+    .about-card {
+      padding: 44px;
+      background: rgba(255,255,255,0.035);
+      backdrop-filter: blur(30px) saturate(200%);
+      -webkit-backdrop-filter: blur(30px) saturate(200%);
+      border: 1px solid rgba(255,255,255,0.09);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.07), 0 20px 60px rgba(0,0,0,0.3);
+      position: relative; overflow: hidden;
+      transition: transform 0.4s cubic-bezier(0.22,1,0.36,1), box-shadow 0.4s;
+      border-radius: 3px;
+    }
+
+    .about-card:first-child { border-radius: var(--r) 3px 3px var(--r); }
+    .about-card:last-child  { border-radius: 3px var(--r) var(--r) 3px; }
+
+    .about-card:hover {
+      transform: translateY(-6px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1),
+                  0 30px 80px rgba(0,0,0,0.5),
+                  0 0 0 1px rgba(0,240,255,0.15);
+    }
+
+    /* shimmer */
+    .about-card::before {
+      content: '';
+      position: absolute; top: 0; left: -100%;
+      width: 60%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+      transition: left 0.6s ease;
+    }
+    .about-card:hover::before { left: 150%; }
+
+    /* glow corner */
+    .about-card::after {
+      content: '';
+      position: absolute; top: -50px; right: -50px;
+      width: 160px; height: 160px;
+      background: radial-gradient(circle, rgba(0,240,255,0.07), transparent 70%);
+      pointer-events: none;
+    }
+
+    .ac-icon { font-size: 30px; color: var(--teal); margin-bottom: 22px; }
+    .ac-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 12px; letter-spacing: 3px; color: var(--teal);
+      margin-bottom: 16px; text-transform: uppercase;
+    }
+    .ac-body {
+      font-size: 14px; line-height: 1.95; color: var(--text);
+      font-weight: 300;
+    }
+    .ac-body strong { color: var(--teal); font-weight: 600; }
+
+    /* ─ skills ─ */
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px;
+    }
+
+    .skill-card {
+      padding: 28px 26px;
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+      position: relative; overflow: hidden;
+      cursor: default; border-radius: 3px;
+      transition: all 0.35s cubic-bezier(0.22,1,0.36,1);
+    }
+
+    .skill-card:hover {
+      background: rgba(0,240,255,0.06);
+      border-color: rgba(0,240,255,0.25);
+      transform: translateY(-5px) scale(1.01);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1),
+                  0 20px 50px rgba(0,0,0,0.4),
+                  0 0 30px rgba(0,240,255,0.08);
+    }
+
+    /* progress bar */
+    .skill-card::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0;
+      height: 2px; width: 0;
+      background: linear-gradient(90deg, var(--teal), var(--violet));
+      transition: width 0.5s cubic-bezier(0.22,1,0.36,1);
+    }
+    .skill-card:hover::after { width: 100%; }
+
+    .sk-icon {
+      width: 50px; height: 50px;
+      border: 1px solid rgba(0,240,255,0.2);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; color: var(--teal);
+      margin-bottom: 18px;
+      background: rgba(0,240,255,0.05);
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .skill-card:hover .sk-icon {
+      background: rgba(0,240,255,0.1);
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    .sk-name { font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 4px; }
+    .sk-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px; letter-spacing: 2px; color: var(--muted);
+    }
+
+    /* ─ services ─ */
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px;
+    }
+
+    .srv-card {
+      padding: 36px 30px;
+      background: rgba(255,255,255,0.025);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255,255,255,0.07);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      position: relative; overflow: hidden; border-radius: 3px;
+      transition: all 0.4s cubic-bezier(0.22,1,0.36,1);
+    }
+
+    .srv-card:hover {
+      background: rgba(0,240,255,0.05);
+      border-color: rgba(0,240,255,0.2);
+      transform: translateY(-8px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.09),
+                  0 30px 70px rgba(0,0,0,0.5),
+                  0 0 40px rgba(0,240,255,0.06);
+    }
+
+    /* floating particle on hover */
+    .srv-card::before {
+      content: '';
+      position: absolute; top: 50%; left: 50%;
+      width: 200px; height: 200px;
+      margin: -100px 0 0 -100px;
+      background: radial-gradient(circle, rgba(0,240,255,0.08), transparent 70%);
+      border-radius: 50%;
+      opacity: 0; transform: scale(0);
+      transition: opacity 0.4s, transform 0.6s cubic-bezier(0.22,1,0.36,1);
+    }
+    .srv-card:hover::before { opacity: 1; transform: scale(1); }
+
+    .srv-num {
+      font-family: 'Orbitron', monospace; font-size: 10px;
+      color: rgba(0,240,255,0.25); letter-spacing: 2px;
+      margin-bottom: 22px; position: relative; z-index: 1;
+    }
+
+    .srv-icon {
+      font-size: 28px; color: var(--teal);
+      display: block; margin-bottom: 16px;
+      position: relative; z-index: 1;
+      transition: transform 0.4s cubic-bezier(0.22,1,0.36,1);
+    }
+    .srv-card:hover .srv-icon { transform: scale(1.15) translateY(-4px); }
+
+    .srv-title {
+      font-size: 15px; font-weight: 600;
+      color: var(--white); line-height: 1.4;
+      position: relative; z-index: 1;
+    }
+
+    /* ─ platforms ─ */
+    .plat-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px;
+    }
+
+    .plat-tile {
+      padding: 30px 16px;
+      background: rgba(255,255,255,0.025);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.07);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      text-align: center; border-radius: 3px;
+      cursor: default;
+      transition: all 0.35s cubic-bezier(0.22,1,0.36,1);
+    }
+
+    .plat-tile:hover {
+      background: rgba(0,240,255,0.07);
+      border-color: rgba(0,240,255,0.3);
+      transform: translateY(-6px) scale(1.04);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1),
+                  0 20px 50px rgba(0,0,0,0.45),
+                  0 0 30px rgba(0,240,255,0.1);
+    }
+
+    .plat-tile i {
+      font-size: 26px; color: var(--teal);
+      display: block; margin-bottom: 12px;
+      transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), filter 0.35s;
+    }
+    .plat-tile:hover i {
+      transform: scale(1.25);
+      filter: drop-shadow(0 0 10px rgba(0,240,255,0.6));
+    }
+
+    .plat-tile span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; letter-spacing: 2px; color: var(--muted);
+    }
+
+    /* ─ personal info ─ */
+    .info-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px;
+      margin-bottom: 3px;
+    }
+
+    .info-tile {
+      display: flex; align-items: center; gap: 16px;
+      padding: 22px 24px;
+      background: rgba(255,255,255,0.025);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.07);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      border-radius: 3px;
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .info-tile:hover {
+      border-color: rgba(0,240,255,0.2);
+      background: rgba(0,240,255,0.04);
+    }
+
+    .info-icon {
+      width: 42px; height: 42px;
+      border: 1px solid rgba(0,240,255,0.15);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--teal); font-size: 15px; flex-shrink: 0;
+      background: rgba(0,240,255,0.04);
+    }
+
+    .info-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px; letter-spacing: 2px; color: var(--muted);
+      display: block; margin-bottom: 5px;
+    }
+
+    .info-val { font-size: 14px; font-weight: 600; color: var(--white); }
+
+    /* lang */
+    .lang-row { display: flex; gap: 3px; }
+
+    .lang-tile {
+      flex: 1; padding: 22px 28px;
+      background: rgba(255,255,255,0.025);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.07);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      display: flex; align-items: center; gap: 14px;
+      border-radius: 3px;
+      transition: all 0.3s;
+    }
+
+    .lang-tile:hover {
+      background: rgba(0,240,255,0.05);
+      border-color: rgba(0,240,255,0.2);
+    }
+
+    .lang-tile i { font-size: 18px; color: var(--teal); }
+    .lang-tile span {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 13px; letter-spacing: 4px; color: var(--white);
+    }
+
+    /* ─ faq ─ */
+    .faq-wrap { display: flex; flex-direction: column; gap: 3px; }
+
+    .faq-item {
+      background: rgba(255,255,255,0.025);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.07);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      overflow: hidden; border-radius: 3px;
+      transition: border-color 0.3s;
+    }
+
+    .faq-item.open {
+      border-color: rgba(0,240,255,0.2);
+    }
+
+    .faq-q {
+      padding: 20px 28px;
+      display: flex; align-items: center; gap: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .faq-q:hover { background: rgba(0,240,255,0.04); }
+
+    .faq-chevron {
+      width: 26px; height: 26px;
+      border: 1px solid rgba(0,240,255,0.2);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--teal); font-size: 10px; flex-shrink: 0;
+      transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), background 0.3s;
+    }
+
+    .faq-item.open .faq-chevron {
+      transform: rotate(90deg);
+      background: rgba(0,240,255,0.1);
+    }
+
+    .faq-q span { font-size: 14px; font-weight: 600; color: var(--white); }
+
+    .faq-body {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.5s cubic-bezier(0.22,1,0.36,1),
+                  padding 0.3s;
+      padding: 0 28px 0 70px;
+    }
+
+    .faq-item.open .faq-body {
+      max-height: 200px;
+      padding: 0 28px 20px 70px;
+    }
+
+    .faq-body p {
+      font-size: 14px; line-height: 1.85;
+      color: var(--text); font-weight: 300;
+    }
+
+    /* ─ contact ─ */
+    .contact-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px;
+      margin-bottom: 3px;
+    }
+
+    .contact-tile {
+      display: flex; align-items: center; gap: 18px;
+      padding: 28px 30px;
+      background: rgba(255,255,255,0.025);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255,255,255,0.07);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+      text-decoration: none; border-radius: 3px;
+      position: relative; overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.22,1,0.36,1);
+    }
+
+    .contact-tile:hover {
+      background: rgba(0,240,255,0.06);
+      border-color: rgba(0,240,255,0.25);
+      transform: translateY(-5px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1),
+                  0 25px 60px rgba(0,0,0,0.4),
+                  0 0 35px rgba(0,240,255,0.07);
+    }
+
+    .contact-tile::after {
+      content: '↗';
+      position: absolute; top: 16px; right: 18px;
+      font-size: 14px; color: var(--teal);
+      opacity: 0; transform: translate(-4px,4px);
+      transition: all 0.3s;
+    }
+    .contact-tile:hover::after { opacity: 1; transform: translate(0,0); }
+
+    .ct-icon {
+      width: 46px; height: 46px;
+      border: 1px solid rgba(0,240,255,0.15);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; color: var(--teal); flex-shrink: 0;
+      background: rgba(0,240,255,0.05);
+      transition: transform 0.3s, background 0.3s;
+    }
+    .contact-tile:hover .ct-icon { transform: scale(1.1); background: rgba(0,240,255,0.1); }
+
+    .ct-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px; letter-spacing: 3px; color: var(--muted);
+      display: block; margin-bottom: 5px; text-transform: uppercase;
+    }
+
+    .ct-val { font-size: 14px; font-weight: 600; color: var(--white); }
+
+    /* ─ CTA ─ */
+    .cta-box {
+      padding: 70px 60px;
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(30px) saturate(200%);
+      -webkit-backdrop-filter: blur(30px) saturate(200%);
+      border: 1px solid rgba(255,255,255,0.07);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.06),
+                  0 0 100px rgba(0,240,255,0.04);
+      border-radius: var(--r);
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: '';
+      position: absolute; bottom: -80px; left: 50%;
+      transform: translateX(-50%);
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(0,240,255,0.05), transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; letter-spacing: 4px; color: var(--muted);
+      margin-bottom: 22px;
+    }
+
+    .cta-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.8rem);
+      font-weight: 700; color: var(--white);
+      letter-spacing: 2px; margin-bottom: 32px;
+    }
+
+    .cta-title span { color: var(--teal); text-shadow: 0 0 30px rgba(0,240,255,0.4); }
+
+    .cta-btn {
+      display: inline-flex; align-items: center; gap: 12px;
+      padding: 18px 60px;
+      background: transparent;
+      border: 1px solid var(--teal);
+      border-radius: 4px;
+      color: var(--teal);
+      font-family: 'Orbitron', sans-serif;
+      font-size: 12px; font-weight: 700; letter-spacing: 4px;
+      cursor: pointer; position: relative; overflow: hidden;
+      transition: color 0.35s;
+    }
+
+    .cta-btn::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, var(--teal), var(--violet));
+      transform: scaleX(0); transform-origin: left;
+      transition: transform 0.4s cubic-bezier(0.22,1,0.36,1);
+      z-index: 0;
+    }
+    .cta-btn:hover::before { transform: scaleX(1); }
+    .cta-btn:hover { color: var(--bg0); }
+    .cta-btn span, .cta-btn i { position: relative; z-index: 1; }
+
+    /* ═══════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════ */
+    footer {
+      position: relative; z-index: 2;
+      text-align: center;
+      padding: 36px 24px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; letter-spacing: 3px; color: var(--muted);
+    }
+
+    /* ═══════════════════════════════════════
+       ANIMATIONS
+    ═══════════════════════════════════════ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ═══════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════ */
+    @media (max-width: 900px) {
+      nav { padding: 14px 24px; }
+      .nav-links { display: none; }
+      .about-grid, .skills-grid, .services-grid, .info-grid { grid-template-columns: 1fr; }
+      .about-card:first-child, .about-card:last-child { border-radius: var(--r); }
+      .plat-grid { grid-template-columns: repeat(2,1fr); }
+      .contact-grid { grid-template-columns: 1fr; }
+      .stats { flex-wrap: wrap; }
+      .stat-box { flex: 1; min-width: 120px; }
+      .hero-ring-wrap { display: none; }
+      .cta-box { padding: 44px 28px; }
     }
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>
-  <h1>Ahammod Ali</h1>
-  <h2><i class="fas fa-lock"></i> Cyber Security Expert & Content Removal Specialist</h2>
 
-  <div class="section">
-    <h3>About Me</h3>
-    <p>
-      My name is Ahammod Ali. I am an experienced Cyber Security Expert and Social Media Content Removal Specialist. My expertise lies in cybersecurity, data protection, and efficiently removing harmful, sexual, or harassing content from online platforms.
-    </p>
-    <p>
-      I specialize in recovering hacked accounts and restoring suspended accounts. With years of experience, I offer effective solutions to complex cyber security challenges.
-    </p>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-text">INITIALIZING</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-pct" id="lpct">0%</div>
   </div>
 
-  <div class="section">
-    <h3>Mission</h3>
-    <p>
-      My mission is to provide fast, effective, and ethical cyber solutions for individuals and businesses. I am committed to restoring digital control, protecting data, and removing harmful content, ensuring safety and privacy in the online world.
-    </p>
-  </div>
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
 
-  <div class="section">
-    <h3>Vision</h3>
-    <p>
-      My vision is to become one of the most trusted cybersecurity experts in the world. I aim to build a safer internet for everyone by offering high-quality support, advanced solutions, and maintaining absolute confidentiality in every case I handle.
-    </p>
+  <!-- Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="aurora">
+    <div class="aurora-blob"></div>
+    <div class="aurora-blob"></div>
+    <div class="aurora-blob"></div>
   </div>
+  <div class="scanlines"></div>
+  <div class="vignette"></div>
 
-  <div class="section">
-    <h3>Skills</h3>
-    <ul>
-      <li><i class="fas fa-code"></i> Python Programming</li>
-      <li><i class="fab fa-meta"></i> Meta Support Handling</li>
-      <li><i class="fas fa-pen-nib"></i> Script Writing</li>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">AHAMMAD ALI</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#platforms">Platforms</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </div>
+    <div class="nav-badge">
+      <span class="pulse-dot"></span>
+      AVAILABLE
+    </div>
+  </nav>
 
-  <div class="section">
-    <h3>Services I Offer</h3>
-    <ul>
-      <li><i class="fas fa-user-shield"></i> Hacked account recovery</li>
-      <li><i class="fas fa-unlock"></i> Suspended account restoration</li>
-      <li><i class="fas fa-copyright"></i> Fake copyright content restore</li>
-      <li><i class="fas fa-brain"></i> Cybersecurity consulting</li>
-      <li><i class="fas fa-shield-alt"></i> Personal & organizational data protection</li>
-    </ul>
-  </div>
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero Section">
+    <div class="hero-ring-wrap" aria-hidden="true">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+    </div>
 
-  <div class="section">
-    <h3>Supported Platforms</h3>
-    <ul>
-      <li><i class="fab fa-facebook"></i> Facebook</li>
-      <li><i class="fab fa-instagram"></i> Instagram</li>
-      <li><i class="fab fa-x-twitter"></i> Twitter/X</li>
-      <li><i class="fab fa-google"></i> Google</li>
-      <li><i class="fas fa-globe"></i> Website</li>
-      <li><i class="fab fa-google-play"></i> Play Store</li>
-      <li><i class="fab fa-linkedin"></i> LinkedIn</li>
-      <li><i class="fas fa-ellipsis-h"></i> Others</li>
-    </ul>
-  </div>
+    <div class="hero-tag">
+      <i class="fas fa-shield-halved"></i>
+      CYBER SECURITY SPECIALIST · BANGLADESH
+    </div>
 
-  <div class="section">
-    <h3>Languages Spoken</h3>
-    <ul>
-      <li><i class="fas fa-language"></i> Bengali </li>
-      <li><i class="fas fa-language"></i> English </li>
-    </ul>
-  </div>
+    <h1 class="hero-name">
+      <span class="glitch-wrap" data-text="AHAMMOD">AHAMMOD</span>
+      &nbsp;
+      <span class="stroke">ALI</span>
+    </h1>
 
-  <div class="section">
-    <h3>Personal Info</h3>
-    <ul>
-      <li><i class="fas fa-calendar-alt"></i> Date of Birth: 2006</li>
-      <li><i class="fas fa-map-marker-alt"></i> Birthplace: Sylhet, Habiganj</li>
-      <li><i class="fas fa-flask"></i> Hobby: Research</li>
-      <li><i class="fas fa-ruler-vertical"></i> Height: 5 feet 5 inches</li>
-      <li><i class="fas fa-graduation-cap"></i> SSC Batch: 2022</li>
-      <li><i class="fas fa-university"></i> HSC Batch: 2025</li>
-    </ul>
-  </div>
+    <p class="hero-role">Digital Defender · Account Recovery · Content Removal</p>
 
-  <div class="section">
-    <h3>FAQ</h3>
-    <p><strong>Q:</strong> How long does it take to recover a hacked account?</p>
-    <p><strong>A:</strong> Usually I solve the problem within 1 to 3 days. However, time may vary depending on the complexity.</p>
+    <div class="stats" role="list" aria-label="Statistics">
+      <div class="stat-box" role="listitem">
+        <div class="s-num" data-count="100" data-suffix="+">0</div>
+        <div class="s-label">CASES SOLVED</div>
+      </div>
+      <div class="stat-box" role="listitem">
+        <div class="s-num" data-count="8">0</div>
+        <div class="s-label">PLATFORMS</div>
+      </div>
+      <div class="stat-box" role="listitem">
+        <div class="s-num" data-count="3">0</div>
+        <div class="s-label">MAX DAYS</div>
+      </div>
+      <div class="stat-box" role="listitem">
+        <div class="s-num" data-count="100" data-suffix="%">0</div>
+        <div class="s-label">CONFIDENTIAL</div>
+      </div>
+    </div>
 
-    <br>
+    <div class="scroll-cue" aria-hidden="true">
+      <div class="scroll-line"></div>
+      SCROLL
+    </div>
+  </section>
 
-    <p><strong>Q:</strong> Do you recover all types of social media accounts?</p>
-    <p><strong>A:</strong> Yes, I solve issues on most social platforms including Facebook, Instagram, Twitter, and Google.</p>
+  <!-- MAIN -->
+  <main>
 
-    <br>
+    <!-- ABOUT -->
+    <section class="sec reveal" id="about">
+      <div class="sh">
+        <span class="sh-num">01</span>
+        <h2 class="sh-title">About Me</h2>
+        <div class="sh-line"></div>
+      </div>
+      <div class="about-grid">
+        <article class="about-card reveal delay-1">
+          <div class="ac-icon"><i class="fas fa-user-astronaut"></i></div>
+          <h3 class="ac-title">Who I Am</h3>
+          <p class="ac-body">My name is <strong>Ahammod Ali</strong>. I am an experienced Cyber Security Expert and Social Media Content Removal Specialist from <strong>Sylhet, Bangladesh</strong>. My expertise lies in cybersecurity, data protection, and efficiently removing harmful, sexual, or harassing content from online platforms.<br><br>I specialize in recovering hacked accounts and restoring suspended accounts — delivering reliable solutions to complex cyber challenges.</p>
+        </article>
+        <article class="about-card reveal delay-2">
+          <div class="ac-icon"><i class="fas fa-satellite-dish"></i></div>
+          <h3 class="ac-title">Mission & Vision</h3>
+          <p class="ac-body">My mission is to provide <strong>fast, effective, and ethical</strong> cyber solutions for individuals and businesses — restoring digital control, protecting data, and removing harmful content.<br><br>My vision is to become one of the most <strong>trusted cybersecurity experts</strong> in the world, building a safer internet through high-quality support and absolute confidentiality in every case I handle.</p>
+        </article>
+      </div>
+    </section>
 
-    <p><strong>Q:</strong> Will my personal data be safe?</p>
-    <p><strong>A:</strong> Absolutely. I work with maximum confidentiality and security.</p>
+    <!-- SKILLS -->
+    <section class="sec reveal" id="skills">
+      <div class="sh">
+        <span class="sh-num">02</span>
+        <h2 class="sh-title">Skills</h2>
+        <div class="sh-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal delay-1">
+          <div class="sk-icon"><i class="fas fa-code"></i></div>
+          <div class="sk-name">Python Programming</div>
+          <div class="sk-tag">AUTOMATION · SCRIPTING</div>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <div class="sk-icon"><i class="fab fa-meta"></i></div>
+          <div class="sk-name">Meta Support</div>
+          <div class="sk-tag">FB · IG · APPEALS</div>
+        </div>
+        <div class="skill-card reveal delay-3">
+          <div class="sk-icon"><i class="fas fa-pen-nib"></i></div>
+          <div class="sk-name">Script Writing</div>
+          <div class="sk-tag">PROFESSIONAL · DETAILED</div>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <div class="sk-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="sk-name">Threat Analysis</div>
+          <div class="sk-tag">DETECTION · MITIGATION</div>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <div class="sk-icon"><i class="fas fa-search"></i></div>
+          <div class="sk-name">OSINT Research</div>
+          <div class="sk-tag">INVESTIGATION · TRACKING</div>
+        </div>
+        <div class="skill-card reveal delay-3">
+          <div class="sk-icon"><i class="fas fa-lock"></i></div>
+          <div class="sk-name">Data Protection</div>
+          <div class="sk-tag">PRIVACY · SECURITY</div>
+        </div>
+      </div>
+    </section>
 
-    <br>
+    <!-- SERVICES -->
+    <section class="sec reveal" id="services">
+      <div class="sh">
+        <span class="sh-num">03</span>
+        <h2 class="sh-title">Services</h2>
+        <div class="sh-line"></div>
+      </div>
+      <div class="services-grid">
+        <div class="srv-card reveal delay-1">
+          <div class="srv-num">SRV-01</div>
+          <i class="fas fa-user-shield srv-icon"></i>
+          <div class="srv-title">Hacked Account Recovery</div>
+        </div>
+        <div class="srv-card reveal delay-2">
+          <div class="srv-num">SRV-02</div>
+          <i class="fas fa-unlock-alt srv-icon"></i>
+          <div class="srv-title">Suspended Account Restoration</div>
+        </div>
+        <div class="srv-card reveal delay-3">
+          <div class="srv-num">SRV-03</div>
+          <i class="fas fa-copyright srv-icon"></i>
+          <div class="srv-title">Fake Copyright Content Restore</div>
+        </div>
+        <div class="srv-card reveal delay-1">
+          <div class="srv-num">SRV-04</div>
+          <i class="fas fa-brain srv-icon"></i>
+          <div class="srv-title">Cybersecurity Consulting</div>
+        </div>
+        <div class="srv-card reveal delay-2">
+          <div class="srv-num">SRV-05</div>
+          <i class="fas fa-database srv-icon"></i>
+          <div class="srv-title">Personal & Org Data Protection</div>
+        </div>
+        <div class="srv-card reveal delay-3">
+          <div class="srv-num">SRV-06</div>
+          <i class="fas fa-trash-alt srv-icon"></i>
+          <div class="srv-title">Harmful Content Removal</div>
+        </div>
+      </div>
+    </section>
 
-    <p><strong>Q:</strong> Can you remove content that wasn't deleted even after reporting?</p>
-    <p><strong>A:</strong> Yes, I can help remove that content through the official process.</p>
-  </div>
+    <!-- PLATFORMS -->
+    <section class="sec reveal" id="platforms">
+      <div class="sh">
+        <span class="sh-num">04</span>
+        <h2 class="sh-title">Supported Platforms</h2>
+        <div class="sh-line"></div>
+      </div>
+      <div class="plat-grid">
+        <div class="plat-tile reveal delay-1"><i class="fab fa-facebook"></i><span>FACEBOOK</span></div>
+        <div class="plat-tile reveal delay-1"><i class="fab fa-instagram"></i><span>INSTAGRAM</span></div>
+        <div class="plat-tile reveal delay-2"><i class="fab fa-x-twitter"></i><span>TWITTER/X</span></div>
+        <div class="plat-tile reveal delay-2"><i class="fab fa-google"></i><span>GOOGLE</span></div>
+        <div class="plat-tile reveal delay-3"><i class="fas fa-globe"></i><span>WEBSITE</span></div>
+        <div class="plat-tile reveal delay-3"><i class="fab fa-google-play"></i><span>PLAY STORE</span></div>
+        <div class="plat-tile reveal delay-1"><i class="fab fa-linkedin"></i><span>LINKEDIN</span></div>
+        <div class="plat-tile reveal delay-2"><i class="fas fa-ellipsis-h"></i><span>OTHERS</span></div>
+      </div>
+    </section>
 
-  <div class="section">
-    <h3>Contact</h3>
-    <p class="email"> ahammodalix@gmail.com</p>
-    <p><i class="fas fa-link"></i> <a href="https://ahammodalix.bio.link/" target="_blank">Visit My Bio Link</a></p>
-    <p><i class="fas fa-user"></i> <a href="https://about.me/ahammodalix" target="_blank">About Me</a></p>
-    <br>
-    <button>Hire Me</button>
-  </div>
+    <!-- INFO + LANGUAGES -->
+    <section class="sec reveal" id="info">
+      <div class="sh">
+        <span class="sh-num">05</span>
+        <h2 class="sh-title">Personal Info</h2>
+        <div class="sh-line"></div>
+      </div>
+      <div class="info-grid">
+        <div class="info-tile reveal delay-1">
+          <div class="info-icon"><i class="fas fa-calendar"></i></div>
+          <div><span class="info-label">YEAR OF BIRTH</span><span class="info-val">2006</span></div>
+        </div>
+        <div class="info-tile reveal delay-2">
+          <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div><span class="info-label">BIRTHPLACE</span><span class="info-val">Sylhet, Habiganj</span></div>
+        </div>
+        <div class="info-tile reveal delay-3">
+          <div class="info-icon"><i class="fas fa-flask"></i></div>
+          <div><span class="info-label">HOBBY</span><span class="info-val">Research</span></div>
+        </div>
+        <div class="info-tile reveal delay-1">
+          <div class="info-icon"><i class="fas fa-ruler-vertical"></i></div>
+          <div><span class="info-label">HEIGHT</span><span class="info-val">5 ft 5 in</span></div>
+        </div>
+        <div class="info-tile reveal delay-2">
+          <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div><span class="info-label">SSC BATCH</span><span class="info-val">2022</span></div>
+        </div>
+        <div class="info-tile reveal delay-3">
+          <div class="info-icon"><i class="fas fa-university"></i></div>
+          <div><span class="info-label">HSC BATCH</span><span class="info-val">2025</span></div>
+        </div>
+      </div>
+      <div style="height:3px"></div>
+      <div class="lang-row reveal">
+        <div class="lang-tile"><i class="fas fa-comment-dots"></i><span>BENGALI</span></div>
+        <div class="lang-tile"><i class="fas fa-comment-dots"></i><span>ENGLISH</span></div>
+      </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- FAQ -->
+    <section class="sec reveal" id="faq">
+      <div class="sh">
+        <span class="sh-num">06</span>
+        <h2 class="sh-title">FAQ</h2>
+        <div class="sh-line"></div>
+      </div>
+      <div class="faq-wrap">
+        <div class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+            <div class="faq-chevron"><i class="fas fa-chevron-right"></i></div>
+            <span>How long does it take to recover a hacked account?</span>
+          </div>
+          <div class="faq-body"><p>Usually I solve the problem within 1 to 3 days. However, time may vary depending on the complexity of the case and the specific platform involved.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+            <div class="faq-chevron"><i class="fas fa-chevron-right"></i></div>
+            <span>Do you recover all types of social media accounts?</span>
+          </div>
+          <div class="faq-body"><p>Yes, I handle issues on most social platforms including Facebook, Instagram, Twitter, and Google. Each case is approached with a tailored strategy.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+            <div class="faq-chevron"><i class="fas fa-chevron-right"></i></div>
+            <span>Will my personal data be safe?</span>
+          </div>
+          <div class="faq-body"><p>Absolutely. I work with maximum confidentiality and security. Your data is never shared or stored without your permission under any circumstances.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+            <div class="faq-chevron"><i class="fas fa-chevron-right"></i></div>
+            <span>Can you remove content not deleted after reporting?</span>
+          </div>
+          <div class="faq-body"><p>Yes, I can help remove such content through official processes and direct platform escalation methods that go beyond standard reporting channels.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="sec reveal" id="contact">
+      <div class="sh">
+        <span class="sh-num">07</span>
+        <h2 class="sh-title">Contact</h2>
+        <div class="sh-line"></div>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:ahammodalix@gmail.com" class="contact-tile reveal delay-1" aria-label="Email Ahammod Ali">
+          <div class="ct-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <span class="ct-label">EMAIL</span>
+            <span class="ct-val">ahammodalix@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://ahammodalix.bio.link/" target="_blank" rel="noopener noreferrer" class="contact-tile reveal delay-2" aria-label="Visit Bio Link">
+          <div class="ct-icon"><i class="fas fa-link"></i></div>
+          <div>
+            <span class="ct-label">BIO LINK</span>
+            <span class="ct-val">ahammodalix.bio.link</span>
+          </div>
+        </a>
+        <a href="https://about.me/ahammodalix" target="_blank" rel="noopener noreferrer" class="contact-tile reveal delay-3" aria-label="Visit About Me page">
+          <div class="ct-icon"><i class="fas fa-user-circle"></i></div>
+          <div>
+            <span class="ct-label">ABOUT ME</span>
+            <span class="ct-val">about.me/ahammodalix</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="cta-box reveal">
+        <div class="cta-tag">READY TO WORK TOGETHER?</div>
+        <div class="cta-title">LET'S SOLVE YOUR <span>CYBER PROBLEM</span></div>
+        <button class="cta-btn" onclick="window.location.href='mailto:ahammodalix@gmail.com'" aria-label="Hire Ahammod Ali">
+          <i class="fas fa-paper-plane"></i>
+          <span>Hire Me Now</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2024 AHAMMOD ALI · CYBER SECURITY EXPERT · SYLHET, BANGLADESH</p>
+  </footer>
+
   <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 75 },
-        size: { value: 3 },
-        color: { value: "#00e5ff" },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#00e5ff",
-          opacity: 0.4,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 2
-        }
-      },
-      interactivity: {
-        events: {
-          onhover: { enable: true, mode: "repulse" }
+    // ── LOADER ────────────────────────────────────────────────
+    const loader = document.getElementById('loader');
+    const lpct   = document.getElementById('lpct');
+    let p = 0;
+    const inc = setInterval(() => {
+      p = Math.min(p + Math.random() * 18, 100);
+      lpct.textContent = Math.floor(p) + '%';
+      if (p >= 100) {
+        clearInterval(inc);
+        setTimeout(() => loader.classList.add('hidden'), 200);
+      }
+    }, 80);
+
+    // ── CUSTOM CURSOR ─────────────────────────────────────────
+    const cur  = document.getElementById('cursor');
+    const ring = document.getElementById('cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cur.style.left = mx + 'px';
+      cur.style.top  = my + 'px';
+    });
+
+    function lerpCursor() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(lerpCursor);
+    }
+    lerpCursor();
+
+    // ── CANVAS BACKGROUND ─────────────────────────────────────
+    const canvas = document.getElementById('bg-canvas');
+    const ctx    = canvas.getContext('2d');
+    let W, H;
+
+    function resize() {
+      W = canvas.width  = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    const nodes = Array.from({length: 45}, () => ({
+      x: Math.random() * 1920,
+      y: Math.random() * 1080,
+      vx: (Math.random() - .5) * .25,
+      vy: (Math.random() - .5) * .25,
+      r: Math.random() * 1.3 + .3,
+    }));
+
+    function frame() {
+      ctx.clearRect(0, 0, W, H);
+
+      // grid
+      ctx.strokeStyle = 'rgba(0,240,255,0.02)';
+      ctx.lineWidth = 1;
+      const g = 75;
+      for (let x = 0; x <= W; x += g) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,H); ctx.stroke(); }
+      for (let y = 0; y <= H; y += g) { ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke(); }
+
+      nodes.forEach(n => {
+        n.x += n.vx; n.y += n.vy;
+        if (n.x < 0) n.x = W; if (n.x > W) n.x = 0;
+        if (n.y < 0) n.y = H; if (n.y > H) n.y = 0;
+      });
+
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i+1; j < nodes.length; j++) {
+          const dx = nodes[i].x - nodes[j].x;
+          const dy = nodes[i].y - nodes[j].y;
+          const d  = Math.sqrt(dx*dx + dy*dy);
+          if (d < 160) {
+            ctx.beginPath();
+            ctx.moveTo(nodes[i].x, nodes[i].y);
+            ctx.lineTo(nodes[j].x, nodes[j].y);
+            ctx.strokeStyle = `rgba(0,240,255,${.06*(1-d/160)})`;
+            ctx.lineWidth = .5;
+            ctx.stroke();
+          }
         }
       }
+
+      nodes.forEach(n => {
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, n.r, 0, Math.PI*2);
+        ctx.fillStyle = 'rgba(0,240,255,.35)';
+        ctx.fill();
+      });
+
+      requestAnimationFrame(frame);
+    }
+    frame();
+
+    // ── SCROLL REVEAL ─────────────────────────────────────────
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.07 });
+    reveals.forEach(r => io.observe(r));
+
+    // ── COUNT UP ──────────────────────────────────────────────
+    const counters = document.querySelectorAll('[data-count]');
+    const co = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el  = e.target;
+        const end = parseInt(el.dataset.count);
+        const sfx = el.dataset.suffix || '';
+        let cur = 0;
+        const step = Math.max(1, Math.ceil(end / 55));
+        const t = setInterval(() => {
+          cur = Math.min(cur + step, end);
+          el.textContent = cur + sfx;
+          if (cur >= end) clearInterval(t);
+        }, 22);
+        co.unobserve(el);
+      });
+    }, { threshold: .5 });
+    counters.forEach(c => co.observe(c));
+
+    // ── FAQ ACCORDION ─────────────────────────────────────────
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+
+      q.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+      });
+    });
+
+    // ── SMOOTH NAV ────────────────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior:'smooth', block:'start' }); }
+      });
+    });
+
+    // ── TILT ON CARDS (about) ─────────────────────────────────
+    document.querySelectorAll('.about-card, .srv-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r   = card.getBoundingClientRect();
+        const x   = (e.clientX - r.left) / r.width  - .5;
+        const y   = (e.clientY - r.top)  / r.height - .5;
+        card.style.transform = `translateY(-6px) rotateX(${-y*6}deg) rotateY(${x*6}deg)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
     });
   </script>
 </body>
